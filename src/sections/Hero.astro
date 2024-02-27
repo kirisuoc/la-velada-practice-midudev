@@ -2,9 +2,13 @@
 import HeroLogo from "@/components/HeroLogo.astro"
 ---
 
-<section class="flex flex-col justify-center items-center gap-9">
-    <span class="text-xl uppercase text-secondary bg-primary px-6 py-1 font-medium">
-        Presentación de la
-    </span>
-    <HeroLogo class=" text-primary w-full h-auto md:w-[800px]"/>
+<section class="flex flex-col place-items-center gap-4 lg:gap-9">
+	<h1 class="sr-only">Presentación de la Velada del Año IV</h1>
+	<span
+		class="animate-fade-in-up bg-primary px-3 py-0.5 text-base font-medium uppercase text-secondary animate-duration-1000 md:px-6 md:py-1 lg:text-xl"
+		aria-hidden="true"
+	>
+		Presentación de la
+	</span>
+	<HeroLogo class="h-auto w-[300px] text-primary md:w-[500px]" />
 </section>

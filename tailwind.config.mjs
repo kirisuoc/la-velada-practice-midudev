@@ -9,8 +9,12 @@ export default {
 			colors: {
 				'primary': '#333',
 				'secondary': '#ddd',
+				'twitch': 'var(--color-twitch)'
 			}
 		},
 	},
-	plugins: [animations],
+	darkMode: 'class',
+	plugins: [animations, function ({ addVariant }) {
+		addVariant("any-hover", "@media (any-hover: hover) { &:hover }")
+	}],
 }
